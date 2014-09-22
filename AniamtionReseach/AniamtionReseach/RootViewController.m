@@ -14,6 +14,8 @@
     __weak IBOutlet UIButton *button1;
     __weak IBOutlet UIButton *button2;
     
+    UIView *animationSubView;
+    
 }
 @end
 
@@ -38,6 +40,17 @@
     UITapGestureRecognizer * m_recongzer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onTouchAnalyze:)];
     [self.view addGestureRecognizer:m_recongzer];
     [m_recongzer setDelegate:self];
+    
+    
+    //    test frame and bounds
+//    [animationView setBounds:CGRectMake(-50, -50, animationView.frame.size.width, animationView.frame.size.height)];
+    animationSubView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+    [animationSubView setBackgroundColor:[UIColor grayColor]];
+    [animationView addSubview:animationSubView];
+    
+
+    // add 高斯模糊
+//    UIImage * testImage = [[UIImage alloc] initwith]
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -51,6 +64,7 @@
 {
     [self animationStartButtion1];
     [self animationStartButtion2];
+    [self animationStartButtion3];
 }
 
 - (void)animationStartButtion1
@@ -58,6 +72,22 @@
     [UIView animateWithDuration:2 animations:^{
         [button1 setFrame:CGRectMake(button1.frame.origin.x+100, button1.frame.origin.y, button1.frame.size.width, button1.frame.size.height)];
     }];
+}
+
+- (void)animationStartButtion3
+{
+
+    CABasicAnimation * aCABasicAnimation = [[CABasicAnimation alloc] init];
+    [aCABasicAnimation setKeyPath:@"transform"];
+    CATransform3D trans = CATransform3DIdentity;
+    trans.m34 = 1.0f/500.0f;
+    [aCABasicAnimation setFromValue:[NSValue valueWithCATransform3D:CATransform3DIdentity]];
+    [aCABasicAnimation setToValue:[NSValue valueWithCATransform3D:CATransform3DRotate(trans, M_PI/4, 1, 0, 0)]];
+    [aCABasicAnimation setDuration:2];
+    [aCABasicAnimation setRemovedOnCompletion:NO];
+    aCABasicAnimation.fillMode = kCAFillModeForwards;
+    [aCABasicAnimation setDelegate:self];
+    [animationView.layer addAnimation:aCABasicAnimation forKey:nil];
 }
 
 - (void)animationStartButtion2

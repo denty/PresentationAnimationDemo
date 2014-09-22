@@ -20,7 +20,7 @@
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Br1-Pf-8sF">
                     <rect key="frame" x="50" y="130" width="220" height="220"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="1" green="0.50289343259999997" blue="0.39080399939999999" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8w-F0-RKc">
                     <rect key="frame" x="20" y="380" width="46" height="30"/>

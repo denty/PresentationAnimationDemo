@@ -24,6 +24,8 @@
 		EC4EB88E19C2C8B5004357F0 /* AniamtionReseachTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4EB88D19C2C8B5004357F0 /* AniamtionReseachTests.m */; };
 		EC4EB89A19C2C8D2004357F0 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4EB89819C2C8D2004357F0 /* RootViewController.m */; };
 		EC4EB89B19C2C8D2004357F0 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC4EB89919C2C8D2004357F0 /* RootViewController.xib */; };
+		ECD3B4F619CAC1AD00982E2A /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD3B4F519CAC1AD00982E2A /* UIImage+ImageEffects.m */; };
+		ECD3B4F819CAC1BA00982E2A /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD3B4F719CAC1BA00982E2A /* Accelerate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,9 @@
 		EC4EB89719C2C8D2004357F0 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		EC4EB89819C2C8D2004357F0 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		EC4EB89919C2C8D2004357F0 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		ECD3B4F419CAC1AD00982E2A /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		ECD3B4F519CAC1AD00982E2A /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		ECD3B4F719CAC1BA00982E2A /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD3B4F819CAC1BA00982E2A /* Accelerate.framework in Frameworks */,
 				EC4EB86519C2C8B5004357F0 /* CoreGraphics.framework in Frameworks */,
 				EC4EB86919C2C8B5004357F0 /* CoreData.framework in Frameworks */,
 				EC4EB86719C2C8B5004357F0 /* UIKit.framework in Frameworks */,
@@ -108,6 +114,7 @@
 		EC4EB86119C2C8B5004357F0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ECD3B4F719CAC1BA00982E2A /* Accelerate.framework */,
 				EC4EB86219C2C8B5004357F0 /* Foundation.framework */,
 				EC4EB86419C2C8B5004357F0 /* CoreGraphics.framework */,
 				EC4EB86619C2C8B5004357F0 /* UIKit.framework */,
@@ -122,6 +129,8 @@
 			children = (
 				EC4EB87319C2C8B5004357F0 /* AppDelegate.h */,
 				EC4EB87419C2C8B5004357F0 /* AppDelegate.m */,
+				ECD3B4F419CAC1AD00982E2A /* UIImage+ImageEffects.h */,
+				ECD3B4F519CAC1AD00982E2A /* UIImage+ImageEffects.m */,
 				EC4EB89719C2C8D2004357F0 /* RootViewController.h */,
 				EC4EB89819C2C8D2004357F0 /* RootViewController.m */,
 				EC4EB89919C2C8D2004357F0 /* RootViewController.xib */,
@@ -258,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC4EB87519C2C8B5004357F0 /* AppDelegate.m in Sources */,
+				ECD3B4F619CAC1AD00982E2A /* UIImage+ImageEffects.m in Sources */,
 				EC4EB87819C2C8B5004357F0 /* AniamtionReseach.xcdatamodeld in Sources */,
 				EC4EB89A19C2C8D2004357F0 /* RootViewController.m in Sources */,
 				EC4EB87119C2C8B5004357F0 /* main.m in Sources */,
@@ -457,6 +467,7 @@
 				EC4EB89319C2C8B5004357F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC4EB89419C2C8B5004357F0 /* Build configuration list for PBXNativeTarget "AniamtionReseachTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +476,7 @@
 				EC4EB89619C2C8B5004357F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
